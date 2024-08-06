@@ -14,7 +14,7 @@ body {
 
 
 .list button:hover {
-    background-color: #cfcbcb;
+    /* background-color: #cfcbcb; */
 }
 
 .list{
@@ -43,6 +43,19 @@ body {
     background-color: #dc3545;
   }
 
+  #counter {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .counter-prefix {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .hud-main-text {
+    text-align: center;
+  }
 @media (min-width:720px) {
     header h1 {
         margin-bottom: 20px;

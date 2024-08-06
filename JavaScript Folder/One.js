@@ -1,5 +1,7 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('option'));
+const scoreText = document.getElementById("score");
+const questionCounterText = document.getElementById("questionCounter");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -52,6 +54,8 @@ getNewQuestion = () => {
         return window.location.assign('/C:\Users\mekon\Downloads\Telegram Desktop\EducationalQuizWebsite\Html Folder\BlankSpace.html');
     }
     questionCounter++;
+    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -74,13 +78,21 @@ choices.forEach((choice) => {
         const selectedAnswer = selectedChoice.dataset['number'];
 
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+        
+        if (classToApply === "correct") {
+          incrementScore(CORRECT_BONUS);
+        }
         selectedChoice.classList.add(classToApply);
 
         setTimeout(() => {
           selectedChoice.classList.remove(classToApply);
         getNewQuestion();
-    },5000);
+    },1000);
 });
 });
+incrementScore = num => {
+  score += num;
+  scoreText.innerText = score;
+};
 
 startGame();
