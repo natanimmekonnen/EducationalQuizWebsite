@@ -30,15 +30,17 @@ body {
 .option{
     border: 1px solid #ccc;
     padding: 10px 20px;
+    width: 100%;
     cursor: pointer;
   }
   
-.selected {
-    background-color: blue;
+  
+  .correct {
+    background-color: #28a745;
   }
   
-.correct{
-    background-color: #1bd964;
+  .incorrect {
+    background-color: #dc3545;
   }
 
 @media (min-width:720px) {
