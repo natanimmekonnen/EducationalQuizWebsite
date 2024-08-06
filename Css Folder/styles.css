@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,27 +14,18 @@ body {
 }
 
 
-.list button:hover {
-    /* background-color: #cfcbcb; */
-}
-
 .list{
     /* background-color: #1bd964; */
     color: #fff;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .option{
     border: 1px solid #ccc;
     padding: 10px 20px;
     width: 100%;
     cursor: pointer;
   }
-  
   
   .correct {
     background-color: #28a745;
@@ -53,13 +45,30 @@ body {
     font-size: 2rem;
   }
   
-  .hud-main-text {
+  .counter-text {
     text-align: center;
+  }
+  
+  #progressbar {
+    width: 90%;
+    height: 2rem;
+    border: 0.3rem solid #181c20;
+    margin-top: 1.5rem;
+    margin: auto;
+    border-radius: 50px;
+  }
+  
+  #progressbarfull {
+    height: 2rem;
+    background-color: #56eb8f;
+    width: 0%;
+    border-radius: 50px;
   }
 @media (min-width:720px) {
     header h1 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 4em; /* Increased font size */
+        color: #181c20;
     }
     
     .card {
@@ -70,11 +79,15 @@ body {
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increased shadow */
         display: inline-block;
         text-align: center;
+        width: 800px;
+        height: 800px;
+        margin-bottom: 20px;
     }
     
     .card p {
         font-size: 2.4em; /* Increased font size */
         margin-bottom: 40px; /* Increased margin */
+       
     }
     
     .list {
@@ -92,126 +105,6 @@ body {
         cursor: pointer;
         font-size: 2em; /* Increased font size */
     }
-    .footer span {
-        font-size: 2em; /* Increased font size */
-        color: #333;
-    }
-    
-    .footer .next {
-        background-color: #ffc107;
-        border: none;
-        padding: 20px; /* Increased padding */
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 2.4em; /* Increased font size */
-    }
-    
-}
-@media (min-width:480px)and( max-width:720px
-) {
-    header h1 {
-        margin-bottom: 20px;
-        font-size: 3em; /* Increased font size */
-    }
-    
-    .card {
-        background-color: #fff;
-        color: #333;
-        padding: 30px; /* Increased padding */
-        border-radius: 10px;
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increased shadow */
-        display: inline-block;
-        text-align: center;
-    }
-    
-    .card p {
-        font-size: 1.9em; /* Increased font size */
-        margin-bottom: 30px; /* Increased margin */
-    }
-    
-    .list {
-        display:flex;
-        flex-direction: column; 
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 30px; /* Increased margin */
-    }
-    
-    .list button {
-        background-color: #e0e0e0;
-        border: none;
-        padding: 15px 30px; /* Increased padding */
-        margin: 7px; /* Increased margin */
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 3em; /* Increased font size */
-    }
-    .footer span {
-        font-size: 3em; /* Increased font size */
-        color: #333;
-    }
-    
-    .footer .next {
-        background-color: #ffc107;
-        border: none;
-        padding: 15px; /* Increased padding */
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1.9em; /* Increased font size */
-    }
-    
-    
-}
-@media (max-width:480px) {
-    header h1 {
-        margin-bottom: 20px;
-        font-size: 2em; /* Increased font size */
-    }
-    
-    .card {
-        background-color: #fff;
-        color: #333;
-        padding: 20px; /* Increased padding */
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow */
-        display: inline-block;
-        text-align: center;
-    }
-    
-    .card p {
-        font-size: 1.2em; /* Increased font size */
-        margin-bottom: 20px; /* Increased margin */
-    }
-    
-    .list {
-        display:flex;
-        flex-direction: column; 
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 20px; /* Increased margin */
-    }
-    
-    .list button {
-        background-color: #e0e0e0;
-        border: none;
-        padding: 10px 20px; /* Increased padding */
-        margin: 5px; /* Increased margin */
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1em; /* Increased font size */
-    }
-    .footer span {
-        font-size: 1em; /* Increased font size */
-        color: #333;
-    }
-    
-    .footer .next {
-        background-color: #ffc107;
-        border: none;
-        padding: 10px; /* Increased padding */
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1.2em; /* Increased font size */
-    }
+  
     
 }
