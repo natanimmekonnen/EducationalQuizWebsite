@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #82b4f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,40 +14,40 @@ body {
 
 header h1 {
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 4em; /* Further increased font size */
 }
 
 .card {
     background-color: #fff;
     color: #333;
-    padding: 20px;
+    padding: 40px; /* Further increased padding */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px 10px  rgba(0, 0, 0, 0.2);
     display: inline-block;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Further increased margin */
 }
 
 .card p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 2em; /* Further increased font size */
+    margin-bottom: 40px; /* Further increased margin */
 }
 
 .options {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Further increased margin */
 }
 
 .options button {
     background-color: #e0e0e0;
     border: none;
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 20px 40px; /* Further increased padding */
+    margin: 10px; /* Kept the margin the same */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 2em; /* Further increased font size */
 }
 
 .options button:hover {
@@ -67,25 +66,25 @@ header h1 {
 }
 
 .footer span {
-    font-size: 1em;
+    font-size: 2em; /* Further increased font size */
     color: #333;
 }
 
 .footer .next {
     background-color: #ffc107;
     border: none;
-    padding: 10px;
+    padding: 20px; /* Further increased padding */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 2em; /* Further increased font size */
 }
 
 .blank {
     border: none;
     border-bottom: 2px solid #333;
-    font-size: 1em;
+    font-size: 2em; /* Further increased font size */
     text-align: center;
-    width: 80px;
+    width: 150px; /* Further increased width */
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
