@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+body {
+    background: url(backgroundc1.png) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 450px;
+    width: 90%;
+    max-width: 410px;
+    background: #eee;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+    padding: 12px;
+}
+
+
+.form-box {
+    display: flex;
+}
+
+.form-box .Loginform {
+    position: absolute;
+    transform: translateX(0px) rotate(0deg);
+    transition: .5s ease;
+    transition-delay: .4s;
+}
+
+.form-box .Loginform.active {
+    transform: translateX(-450px) rotate(-45deg);
+    transition-delay: .2s;
+
+}
+
+.form-box .Signupform {
+    transform: translateX(490px) rotate(45deg);
+    transition: .5s ease;
+    transition-delay: .2s;
+
+}
+
+.form-box .Signupform.active {
+    transform: translateX(0px) rotate(0deg);
+    transition-delay: .4s;
+}
+
+.container .form-box h1 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-box .form-group {
+    margin: 20px 0;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    position: relative;
+}
+.form-group .toggle-password{
+    font-size: 13px;
+}
+
+.form-box .form-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 34px 0 5px;
+}
+
+.form-box .form-group label {
+    font-weight: 350;
+    position: absolute;
+    letter-spacing: .5px;
+    top: 40%;
+    left: 1px;
+    transform: translateY(-50%);
+    transition: .5s ease;
+}
+
+.form-group input:focus~label,
+.form-group input:valid~label {
+    top: -5px;
+}
+
+
+
+.form-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, #f2e6a4, 60%, #e26913);
+    font-size: 19px;
+    font-weight: 500;
+    color: #eee;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #e26913;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for error messages */
+.error-message {
+    color: #ce3423;
+    /* Red color for error messages */
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    /* Align to the right edge of the input */
+    top: 100%;
+    /* Position it below the input field */
+    margin-top: 5px;
+    /* Add some space above the error message */
+    background-color:#ffff;
+    /* white background for the box */
+    border: 1px solid #e74c3c;
+    /* Red border for the box */
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: normal;
+    /* Allow text to wrap */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Make the error message as wide as the input field */
+    box-sizing: border-box;
+    /* Ensure padding doesn’t affect the width */
+    z-index: 1;
+}
+
+/* Adjust the form-group to fit the error message box */
+.form-group {
+    position: relative;
+    margin-bottom: 70px;
+    /* Ensure enough space for the input and error message */
+}
+
+/* Red border for invalid input fields */
+.form-group.invalid input {
+    border-color: #e74c3c;
+}
+
+/* Show the error message box when the input is invalid */
+.form-group.invalid .error-message {
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .form-box .Loginform.active {
+        transform: translateX(-400px) rotate(-45deg);
+    }
+
+    .form-box .Signupform {
+        transform: translateX(450px) rotate(45deg);
+    }
+
+    .form-box .Signupform.active {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    .container .form-box h1 {
+        font-size: 18px;
+    }
+
+    form button {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .form-box .Loginform.active {
+        transform: translateX(-360px) rotate(-45deg);
+    }
+
+    .form-box .Signupform {
+        transform: translateX(400px) rotate(45deg);
+    }
+
+    .form-box .Signupform.active {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    .container .form-box h1 {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 16px;
+        height: 38px;
+    }
+}
