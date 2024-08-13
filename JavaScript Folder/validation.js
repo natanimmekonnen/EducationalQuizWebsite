@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clearError(password);
     }
     
+    
     // Validate confirm password (must match password)
     if (password.value !== confirmPassword.value) {
     showError(confirmPassword, 'Passwords do not match');

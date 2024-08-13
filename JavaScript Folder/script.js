@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.next-btn');
     const optionList = document.querySelector('.option-list');
     const MAX_QUESTIONS = 10;
+    let questions = questionsSet1;
+    
 
     let questionCount = 0;
     let questionNumb = 1;
@@ -164,5 +166,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearInterval(progress);
             }
         }, speed);
+    }
+    document.querySelector('.set1-btn').onclick = () => {
+        questions = questionsSet1;
+        popupInfo.classList.add('active');
+        main.classList.add('active');
+        // resetQuiz();
+    };
+    
+    document.querySelector('.set2-btn').onclick = () => {
+        questions = questionsSet2;
+        popupInfo.classList.add('active');
+        main.classList.add('active');
+        // resetQuiz();
+    };
+    document.querySelector('.set3-btn').onclick = () => {
+        questions = questionsSet3;
+        popupInfo.classList.add('active');
+        main.classList.add('active');
+        // resetQuiz();
+    };
+    function resetQuiz() {
+        shuffleArray(questions);
+        questionCount = 0;
+        questionNumb = 1;
+        userScore = 0;
+        showQuestions(questionCount);
+        questionCounter(questionNumb);
+        headerScore();
+        quizSection.classList.add('active');
+        main.classList.remove('active');
+        quizBox.classList.add('active');
+        nextBtn.classList.remove('active');
     }
 });
