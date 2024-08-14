@@ -1,10 +1,10 @@
-@import url();
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Poppins";
 }
 body {
   color: white;
@@ -75,7 +75,7 @@ body {
   flex-direction: column;
 }
 .home-content h1 {
-  margin-top: 170px; 
+  margin-top: 170px;
   font-size: 70px;
   font-weight: 700;
   text-shadow: 0, 0, 10px rgba(0, 0, 0, 0.3);
@@ -414,7 +414,7 @@ body {
   font-size: 4rem;
   border-radius: 3rem;
 }
-.course-list #web{
+.course-list #web {
   text-align: center;
   width: 100%;
 }
@@ -429,4 +429,5 @@ body {
 .courses:hover {
   background-color: rgb(241, 81, 23);
   border-color: #340893;
+  color: #340893;
 }
