@@ -44,7 +44,7 @@ body {
 }
 .main {
   min-height: 100vh;
-  background: url(/Images/backgroundFive.jpg) no-repeat;
+  /* background: url(/Images/backgroundFive.jpg) no-repeat; */
   background-size: cover;
   background-position: center;
   pointer-events: auto;
@@ -431,3 +431,7 @@ body {
   border-color: #340893;
   color: #340893;
 }
+
+
+
+
