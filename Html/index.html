@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Css/styles.css" />
+    <script defer src="/Javascript/app.js"></script>
+    <title>Lenny Quiz</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-btn"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            /></svg
+        ></label>
+        <label for="sidebar-active" id="overlay"></label>
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-btn"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e8eaed"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></label>
+          <a href="#home" class="home-link">Home</a>
+          <a href="#courses">Courses</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#">Login</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container" id="home">
+          <h1>Home</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            provident culpa. Quia, vitae voluptatum odit provident nobis dolor
+            iste ab rem doloribus obcaecati, dolores autem temporibus fugiat
+            laborum id. Ratione.
+          </p>
+        </div>
+      </section>
+
+      <div class="sticky-parent">
+        <div class="sticky" id="courses">
+          <div class="scroll-section" id="course">
+            <div class="courses">
+              <img src="/assets/math.jpg" alt="" />
+              <div class="text-area" id="math">
+                <h1 class="Title">Mathematics</h1>
+                <p class="Description"></p>
+                <a href="#" class="begin-btn">Start Quiz</a>
+              </div>
+            </div>
+            <div class="courses">
+              <img src="/assets/biology.jpg" alt="" />
+              <div class="text-area" id="bio">
+                <h1 class="Title">Biology</h1>
+                <p class="Description"></p>
+                <a href="#" class="begin-btn">Start Quiz</a>
+              </div>
+            </div>
+            <div class="courses">
+              <img src="/assets/webtech.jpg" alt="" />
+              <div class="text-area" id="web">
+                <h1 class="Title">Web Technologies</h1>
+                <p class="Description"></p>
+                <a href="#" class="begin-btn">Start Quiz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="container" id="about">
+          <h1>About</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            provident culpa. Quia, vitae voluptatum odit provident nobis dolor
+            iste ab rem doloribus obcaecati, dolores autem temporibus fugiat
+            laborum id. Ratione.
+          </p>
+        </div>
+      </section>
+
+      <div class="sticky-parent">
+        <div class="sticky" id="contact">
+          <div class="scroll-section">
+            <div class="contacts"></div>
+            <div class="contacts"></div>
+            <div class="contacts"></div>
+            <div class="contacts"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
