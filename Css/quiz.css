@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  color: #f1f1f1;
+  background-color: black;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  width: 50%;
+  margin: 2rem 0;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  padding: 5rem;
+}
+
+.sticky-parent {
+  height: 800vh;
+}
+.sticky {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  border: 1px solid black;
+}
+.scroll-section {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 800vw;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 40%;
+  height: 80%;
+  background-color: black;
+  margin: 10px 10px;
+}
+.options {
+  width: 100%;
+  padding-left: 3rem;
+}
+.option {
+  border: 0.5px solid white;
+  border-radius: 4rem;
+  width: 80%;
+  padding-left: 2rem;
+  margin: 20px auto;
+}
+.option:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.205);
+}
+.question h2 {
+  font-size: 30px;
+}
+.option p {
+  font-size: 30px;
+}
+
+.option .correct {
+  background-color: #4caf50; /* Green for correct */
+  color: white;
+}
+
+.option .incorrect {
+  background-color: #f44336; /* Red for incorrect */
+  color: white;
+}
+
+.option .disabled {
+  cursor: not-allowed;
+  pointer-events: none; /* Disable further clicks */
+}
+
+.option .disabled:hover {
+  background-color: #f1f1f1; /* Remove hover effect */
+}
+
+.spacers {
+  aspect-ratio: 960/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layer0 {
+  background-image: url(../assets/layer0.svg);
+}
+.layer4 {
+  background-image: url(../assets/footer1.svg);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container p {
+  font-size: 30px;
+}
+
+body {
+  background-color: black;
+}
+
+/*  */
+
+.result-box h2 {
+  font-size: 52px;
+}
+.result-box .percentage-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 40px;
+}
+.percentage-container .circular-progress {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: conic-gradient(
+    rgb(182, 20, 8) 3.6deg,
+    rgba(234, 101, 0, 0.7) 0deg
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.percentage-container .circular-progress::before {
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  background: rgb(185, 163, 122);
+  border-radius: 50%;
+}
+.circular-progress .progress-value {
+  position: relative;
+  font-size: 45px;
+  font-weight: 600;
+}
+.percentage-container .score-text {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.result-box .buttons {
+  display: flex;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
