@@ -17,6 +17,11 @@ main {
   width: 100%;
   height: 100%;
 }
+html {
+  font-size: 12pt;
+  font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
 h1 {
   font-size: 4rem;
 }
@@ -30,6 +35,8 @@ section {
 }
 .container {
   padding: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .sticky-parent {
@@ -73,10 +80,16 @@ section {
 }
 /*  */
 
-#course:hover > .courses::after {
-  opacity: 0.3;
+.contacts {
+  border: 1px solid white;
 }
 
+#contact:hover > .contacts::after,
+#course:hover > .courses::after {
+  opacity: 1;
+  border: 0.5px solid rgba(255, 255, 255, 0.16);
+}
+.contacts,
 .courses {
   color: var(--text-color);
   background-color: rgba(255, 255, 255, 0.254);
@@ -88,11 +101,12 @@ section {
   position: relative;
   width: 300px;
 }
-
+.contacts:hover::before,
 .courses:hover::before {
   opacity: 1;
 }
-
+.contacts::before,
+.contacts::after,
 .courses::before,
 .courses::after {
   border-radius: inherit;
@@ -105,7 +119,7 @@ section {
   transition: opacity 500ms;
   width: 100%;
 }
-
+.contacts::before,
 .courses::before {
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
@@ -114,7 +128,7 @@ section {
   );
   z-index: 3;
 }
-
+.contacts::after,
 .courses::after {
   background: radial-gradient(
     600px circle at var(--mouse-x) var(--mouse-y),
@@ -123,6 +137,7 @@ section {
   );
   z-index: 1;
 }
+
 .text-area {
   align-items: center;
   justify-content: center;
@@ -136,18 +151,23 @@ section {
   font-size: 2rem;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.377);
-  padding: 10px;
-  border-radius: 6px;
+  padding: 30px;
+  border-radius: 6rem;
+  z-index: 9;
 }
+
+/*  */
+.begin-btn:hover {
+  /* background-color: white; */
+  transform: scale(1.1);
+}
+
 /* ///////////////////////////////////////////////////////  */
-html {
-  font-size: 12pt;
-  font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  scroll-behavior: smooth;
-}
+
 nav {
   height: 60px;
-  background-color: var(--color-1);
+  background-color: #fc5f2b;
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -166,10 +186,11 @@ nav a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--text-color);
+  color: #0f1016;
 }
 nav a:hover {
-  background-color: var(--accent-color);
+  background-color: #ff9674;
+  transition: 0.5s ease;
 }
 
 nav .home-link {
@@ -190,50 +211,28 @@ nav svg {
   .scroll-section img {
     display: none;
   }
-  #math {
-    background: url("/assets/math.jpg");
-    background-size: cover;
+  .courses {
+    width: 80vw;
     border: 1px solid white;
-    backdrop-filter: blue(10px);
-    padding: 3rem;
-    background-position: center;
-    width: 90%;
-    align-items: center;
   }
-  #bio {
-    background: url("/assets/biology.jpg");
-    background-size: cover;
-    border: 1px solid white;
-    backdrop-filter: blue(10px);
-    padding: 3rem;
-    background-position: center;
+  .text-area {
+    display: block;
     width: 90%;
-    align-items: center;
   }
-  #web {
-    background: url("/assets/webtech.jpg");
-    background-size: cover;
-    border: 1px solid white;
-    backdrop-filter: blue(10px);
-    padding: 3rem;
-    background-position: center;
-
-    width: 90%;
-    align-items: center;
+  .begin-btn {
+    width: 80%;
+  }
+  .begin-btn:active {
+    transition: 0.3s;
+    background-color: white;
+    columns: black;
   }
   .title,
   .description {
     background-color: #0f10165a;
   }
 }
-
-@media (max-width: 560px) {
-  /* .scroll-section img {
-    width: 300px;
-  }
-  .scroll-section div {
-    width: 90vw;
-  } */
+@media (max-width: 1000px) {
   .links-container {
     flex-direction: column;
     align-items: flex-start;
@@ -242,7 +241,7 @@ nav svg {
     right: -100%;
     z-index: 10;
     width: 300px;
-    background-color: var(--color-1);
+    background-color: #fc5f2b;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 0.75s ease-out;
   }
@@ -269,4 +268,103 @@ nav svg {
     left: 0;
     z-index: 9;
   }
+  #home,
+  #contact {
+    text-align: justify;
+    padding: 0px 0px;
+    align-items: center;
+  }
+  .blob,
+  .layer1,
+  .layer2,
+  .layer3,
+  .layer4 {
+    display: none;
+  }
+
+  .courses,
+  .contacts {
+    width: 80%;
+    border: 1px solid white;
+  }
+  .text-area {
+    display: block;
+    width: 90%;
+  }
+}
+
+.sticky-parent {
+  color: #fc5f2b;
+  background-color: #000;
+  /* #E7DDCF
+#181818 */
+}
+
+.container {
+  /* #C7E410
+#B866FA */
+  color: #fc5f2b;
+
+  background-color: #000;
+}
+
+/* #course {
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+section,
+.sticky-parent {
+  position: relative;
+}
+
+.spacer {
+  aspect-ratio: 960/100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.toplayer {
+  background-image: url(../assets/toplayer.svg);
+}
+
+.spacers {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layer1 {
+  background-image: url(../assets/layer1.svg);
+}
+
+.layer2 {
+  background-image: url(../assets/layer2.svg);
+}
+
+.layer3 {
+  background-image: url(../assets/layer3.svg);
+}
+
+.layer4 {
+  background-image: url(../assets/footer1.svg);
+}
+
+.footer {
+  bottom: 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
 }

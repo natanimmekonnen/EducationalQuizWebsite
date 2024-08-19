@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Css/styles.css" />
-    <script defer src="/Javascript/app.js"></script>
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <script defer src="../Javascript/app.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
+"></script>
     <title>Lenny Quiz</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header spacer toplayer">
       <nav>
         <input type="checkbox" id="sidebar-active" />
         <label for="sidebar-active" class="open-sidebar-btn"
@@ -41,78 +44,195 @@
           <a href="#courses">Courses</a>
           <a href="#about">About</a>
           <a href="#contact">Contact Us</a>
-          <a href="#">Login</a>
+          <a href="../Html/login.html" id="login">Login</a>
         </div>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="firstSect">
         <div class="container" id="home">
-          <h1>Home</h1>
+          <h1>Lenny Quiz</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam,
-            provident culpa. Quia, vitae voluptatum odit provident nobis dolor
-            iste ab rem doloribus obcaecati, dolores autem temporibus fugiat
-            laborum id. Ratione.
+            Welcome to Lenny Quiz, your go-to destination for fun and
+            educational quizzes! Whether you're a student, a lifelong learner,
+            or just someone who loves to challenge their knowledge, we've got
+            something for everyone.
           </p>
+          <svg
+            class="blob"
+            id="visual"
+            viewBox="0 0 900 300"
+            width="900"
+            height="300"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <g transform="translate(438.7517435601593 170.20350703079146)">
+              <path
+                id="blob1"
+                d="M134.7 -136.9C163.4 -106.1 167.7 -53 161.8 -5.9C155.9 41.2 139.8 82.5 111.2 104.7C82.5 126.8 41.2 129.9 1.5 128.4C-38.2 126.9 -76.4 120.7 -103.4 98.5C-130.4 76.4 -146.2 38.2 -140.4 5.8C-134.5 -26.5 -107 -53 -80 -83.9C-53 -114.7 -26.5 -149.9 13.3 -163.1C53 -176.4 106.1 -167.7 134.7 -136.9"
+                fill="#fc5f2b"
+              ></path>
+            </g>
+            <g
+              transform="translate(463.5394013988881 165.83306312215288)"
+              style="visibility: hidden"
+            >
+              <path
+                id="blob2"
+                d="M115.3 -104.1C147.6 -83 170.8 -41.5 166.1 -4.7C161.4 32.1 128.8 64.1 96.4 82.9C64.1 101.6 32.1 107.1 -0.9 108C-33.9 108.9 -67.9 105.4 -104.9 86.6C-141.9 67.9 -181.9 33.9 -191.5 -9.5C-201 -53 -180.1 -106.1 -143.1 -127.2C-106.1 -148.4 -53 -137.7 -5.8 -131.9C41.5 -126.2 83 -125.3 115.3 -104.1"
+                fill="#fc5f2b"
+              ></path>
+            </g>
+          </svg>
+
+          <script>
+            const tween = KUTE.fromTo(
+              "#blob1",
+              { path: "#blob1" },
+              { path: "#blob2" },
+              { repeat: 999, duration: 3000, yoyo: true }
+            );
+
+            tween.start();
+          </script>
         </div>
       </section>
-
-      <div class="sticky-parent">
-        <div class="sticky" id="courses">
+      <div class="spacers layer2"></div>
+      <div class="sticky-parent" id="courses">
+        <h1>Courses</h1>
+        <div class="sticky">
           <div class="scroll-section" id="course">
             <div class="courses">
-              <img src="/assets/math.jpg" alt="" />
+              <img src="../assets/math.jpg" alt="" />
               <div class="text-area" id="math">
-                <h1 class="Title">Mathematics</h1>
+                <h1 class="Title">Math</h1>
                 <p class="Description"></p>
-                <a href="#" class="begin-btn">Start Quiz</a>
+                <a href="../Html/math.html" class="begin-btn">Start Quiz</a>
               </div>
             </div>
+
             <div class="courses">
-              <img src="/assets/biology.jpg" alt="" />
+              <img src="../assets/biology.jpg" alt="" />
               <div class="text-area" id="bio">
                 <h1 class="Title">Biology</h1>
                 <p class="Description"></p>
-                <a href="#" class="begin-btn">Start Quiz</a>
+                <a href="../Html/bio.html" class="begin-btn">Start Quiz</a>
               </div>
             </div>
             <div class="courses">
-              <img src="/assets/webtech.jpg" alt="" />
+              <img src="../assets/webtech.jpg" alt="" />
               <div class="text-area" id="web">
-                <h1 class="Title">Web Technologies</h1>
+                <h1 class="Title">Web Tech</h1>
                 <p class="Description"></p>
-                <a href="#" class="begin-btn">Start Quiz</a>
+                <a href="../Html/web.html" class="begin-btn">Start Quiz</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      <div class="spacers layer1"></div>
       <section>
         <div class="container" id="about">
-          <h1>About</h1>
+          <h1>About Us</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam,
-            provident culpa. Quia, vitae voluptatum odit provident nobis dolor
-            iste ab rem doloribus obcaecati, dolores autem temporibus fugiat
-            laborum id. Ratione.
+            At Lenny Quiz, we believe that learning doesn't have to be boring.
+            Our mission is to make education engaging, interactive, and
+            accessible for all. With a wide range of quizzes covering subjects
+            like Biology, English, and Web Technologies, we aim to help you test
+            your knowledge, improve your skills, and discover new areas of
+            interest.At Lenny Quiz, we believe that learning doesn't have to be
+            boring. Our mission is to make education engaging, interactive, and
+            accessible for all. With a wide range of quizzes covering subjects
+            like Biology, English, and Web Technologies, we aim to help you test
+            your knowledge, improve your skills, and discover new areas of
+            interest. But we’re more than just a quiz website—we’re a community
+            of learners. We encourage you to explore new topics, compete with
+            friends, and track your progress over time. Whether you're preparing
+            for an exam, brushing up on your skills, or just having some fun,
+            Lenny Quiz is here to support your learning journey. Thank you for
+            choosing Lenny Quiz. Let’s learn, challenge, and grow together! We'd
+            love to hear from you! Whether you have a question, feedback, or
+            just want to say hi, feel free to reach out to us.
           </p>
+          <svg
+            class="blob"
+            id="visual"
+            viewBox="0 0 960 500"
+            width="960"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <g transform="translate(471.5259039869321 247.43589741887297)">
+              <path
+                id="midblob1"
+                d="M145.8 -125C187.5 -104.2 218.8 -52.1 219.2 0.5C219.7 53 189.4 106.1 147.7 128.6C106.1 151.1 53 143 11 132.1C-31.1 121.1 -62.2 107.2 -102.6 84.7C-142.9 62.2 -192.4 31.1 -200.9 -8.5C-209.4 -48.1 -176.8 -96.2 -136.5 -117C-96.2 -137.8 -48.1 -131.4 2 -133.4C52.1 -135.4 104.2 -145.9 145.8 -125"
+                fill="#fc5f2b"
+              ></path>
+
+              <path
+                style="visibility: hidden"
+                id="midblob2"
+                d="M133 -149.4C153.9 -112.2 139.4 -56.1 140.9 1.4C142.3 58.9 159.5 117.9 138.7 152.7C117.9 187.5 58.9 198.3 7.9 190.4C-43.1 182.5 -86.3 155.9 -124.4 121.1C-162.6 86.3 -195.8 43.1 -193.1 2.7C-190.4 -37.7 -151.8 -75.4 -113.6 -112.6C-75.4 -149.8 -37.7 -186.4 9.2 -195.6C56.1 -204.8 112.2 -186.5 133 -149.4"
+                fill="#fc5f2b"
+              ></path>
+
+              <path
+                style="visibility: hidden"
+                id="midblob3"
+                d="M137.2 -130.7C171.2 -103.2 187.6 -51.6 178.1 -9.5C168.5 32.5 133.1 65.1 99.1 106.7C65.1 148.4 32.5 199.2 -12 211.2C-56.6 223.2 -113.1 196.5 -134 154.8C-154.8 113.1 -139.9 56.6 -138.8 1.1C-137.8 -54.4 -150.6 -108.9 -129.7 -136.4C-108.9 -163.9 -54.4 -164.4 -1.4 -163C51.6 -161.6 103.2 -158.2 137.2 -130.7"
+                fill="#fc5f2b"
+              ></path>
+            </g>
+          </svg>
+          <script>
+            const tween1 = KUTE.fromTo(
+              "#midblob1",
+              { path: "#midblob1" },
+              { path: "#midblob2" },
+              { repeat: 999, duration: 3000, yoyo: true }
+            );
+
+            tween1.start();
+          </script>
         </div>
       </section>
-
-      <div class="sticky-parent">
-        <div class="sticky" id="contact">
+      <div class="spacers layer2"></div>
+      <div class="sticky-parent" id="contact">
+        <h1>Contact Us</h1>
+        <div class="sticky">
           <div class="scroll-section">
-            <div class="contacts"></div>
-            <div class="contacts"></div>
-            <div class="contacts"></div>
-            <div class="contacts"></div>
+            <div class="contacts">
+              <img src="../assets/Git.png" alt="" />
+              <div class="text-area" id="bio">
+                <h1>Lidiya Neker</h1>
+              </div>
+            </div>
+            <div class="contacts">
+              <img src="../assets/Git.png" alt="" />
+              <div class="text-area" id="bio">
+                <h1>Nahom Mekonnen</h1>
+              </div>
+            </div>
+            <div class="contacts">
+              <img src="../assets/Git.png" alt="" />
+              <div class="text-area" id="bio">
+                <h1>Natanim Mekonnen</h1>
+              </div>
+            </div>
+            <div class="contacts">
+              <img src="../assets/Git.png" alt="" />
+              <div class="text-area" id="bio">
+                <h1>Yonathan Alula</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="spacers layer4" id="footer"></div>
     </main>
-
-    <footer></footer>
   </body>
 </html>
