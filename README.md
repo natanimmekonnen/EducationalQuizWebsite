@@ -67,8 +67,8 @@ Welcome to the **Educational Quiz Website**, a platform designed to challenge an
   - Upon completing all 10 questions, your **score** will be displayed on a card.
   
 - **Next Steps**:
-  - **continue**: Want to improve your score? Click ** Continue** to restart the quiz with new questions.
-  - **Wxit**: Return to the Home Page by clicking **Exit**.
+  - **continue**: Want to improve your score? Click **Continue** to restart the quiz with new questions.
+  - **Exit**: Return to the Home Page by clicking **Exit**.
 
 ---
 
