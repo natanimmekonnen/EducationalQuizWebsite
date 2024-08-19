@@ -51,18 +51,15 @@ Welcome to the **Educational Quiz Website**, a platform designed to challenge an
 ### 📚 Selecting a Course
 
 - Choose any course from the Home Page.
-- A **pop-up** will appear with quiz details and options to either **Exit Quiz** or **Continue**.
+- A **quiz page ** will appear with quiz detail.
 
 ### 🧠 Quiz Time!
 
 - **Questions**: 
-  - The quiz comprises **10 questions** generated randomly.
+  - The quiz comprises **10 questions** .
   - Each question will challenge your knowledge of the chosen course.
   
-- **Progress**:
-  - **Top Bar**: Displays the number of questions completed out of 10.
-  - **Footer**: Shows how many questions you’ve attempted.
-  - **Next Button**: Move forward to the next question after answering.
+
 
 ### 🏆 Quiz Completion
 
@@ -70,8 +67,8 @@ Welcome to the **Educational Quiz Website**, a platform designed to challenge an
   - Upon completing all 10 questions, your **score** will be displayed on a card.
   
 - **Next Steps**:
-  - **Try Again**: Want to improve your score? Click **Try Again** to restart the quiz with new questions.
-  - **Go Home**: Return to the Home Page by clicking **Home**.
+  - **continue**: Want to improve your score? Click ** Continue** to restart the quiz with new questions.
+  - **Wxit**: Return to the Home Page by clicking **Exit**.
 
 ---
 
@@ -87,7 +84,7 @@ Discover more about the Lenny Quiz and our mission by visiting the **About Us** 
 
 ## 📬 Contact Us
 
-Have questions, suggestions, or need assistance? Fill out the **Contact Us** form with your **Name**, **Email**, and **Message**—we’re here to help!
+Have questions, suggestions, or need assistance? go to  **Contact Us** and click the link that goes to each of our github account.
 
 ---
 
